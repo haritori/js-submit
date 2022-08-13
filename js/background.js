@@ -10,6 +10,10 @@ const colors = [
   "#596275",
   "#f78fb3",
   "#303952",
+  "#2d3436",
+  "#2d98da",
+  "#4b6584",
+  "#218c74",
 ];
 
 const body = document.querySelector("body");
