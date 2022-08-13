@@ -44,17 +44,47 @@
   color: honeydew;
 }
 
-#greeting,
+#greeting {
+  font-size: 18px;
+  margin-top: 5px;
+  animation: showtext ease-in-out 1500ms;
+}
+
 #date,
 #clock {
   font-size: 18px;
   margin-top: 5px;
+  animation: showtext ease-in-out 2000ms;
 }
 
 .screen-box__span {
   display: block;
   font-size: 18px;
   margin-top: 5px;
+}
+
+@keyframes showtext {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+#weather span:first-child,
+#weather span:nth-child(2) {
+  animation: showtext 2.5s ease-in-out;
+}
+
+#count span:first-child,
+#count span:nth-child(2) {
+  animation: showtext ease-in-out 2500ms;
 }
 
 .screen-content {
