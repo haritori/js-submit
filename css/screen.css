@@ -1,0 +1,125 @@
+.screen-box {
+  display: flex;
+  align-items: center;
+  width: 1300px;
+  height: 800px;
+}
+
+.screen-box__hello {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 400px;
+  height: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  margin-right: 15px;
+  transition: background-color 0.8s ease-in-out;
+  padding: 0px;
+}
+
+.screen-box__text {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  height: 200px;
+  padding: 20px 0px;
+  transition: background-color 0.8s ease-in-out;
+  border: 2px dashed rgba(0, 0, 0, 0.8);
+  font-size: 18px;
+}
+
+.screen-box__text:first-child,
+.screen-box__text:nth-child(2),
+.screen-box__text:nth-child(3) {
+  margin-bottom: 2px;
+}
+
+.screen-box__text:hover {
+  background-color: transparent;
+  color: honeydew;
+}
+
+#greeting,
+#date,
+#clock {
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.screen-box__span {
+  display: block;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.screen-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  margin-right: 15px;
+}
+
+.screen-box__form {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-sizing: border-box;
+  padding: 0px 10px;
+  margin-bottom: 10px;
+  border: 2px dashed rgba(0, 0, 0, 0.8);
+}
+
+.content-input input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.8s ease-in-out;
+  color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 40px;
+  color: black;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  padding: 0px;
+}
+
+.content-input input:focus {
+  border-color: black;
+  box-sizing: border-box;
+}
+
+.list-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 700px;
+}
+
+.li-list {
+  margin-bottom: 5px;
+}
+
+.li-button {
+  background-color: transparent;
+  border: none;
+  border-left: 1px solid black;
+  margin-left: 10px;
+}
+
+.quote-box {
+  height: 100px;
+  width: 100%;
+}
+.quote-box span {
+  color: white;
+}

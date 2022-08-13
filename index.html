@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <form id="login-form" class="hidden input-box">
+      <input
+        required
+        maxlength="10"
+        type="text"
+        placeholder="Please write your name"
+      />
+      <button>Log in</button>
+    </form>
+    <div class="screen-box">
+      <div class="screen-box__hello">
+        <div class="screen-box__text">
+          <h1 id="greeting" class="hidden"></h1>
+        </div>
+        <div class="screen-box__text">
+          오늘은
+          <h2 id="date"></h2>
+          <h2 id="clock">00:00:00</h2>
+        </div>
+        <div id="weather" class="screen-box__text">
+          날씨
+          <span class="screen-box__span"></span>
+          <span class="screen-box__span"></span>
+        </div>
+        <div id="count" class="screen-box__text">
+          <span class="screen-box__span">2023년까지</span>
+          <span class="screen-box__span"></span>
+        </div>
+      </div>
+
+      <div class="screen-content">
+        <div class="screen-box__form">
+          <form id="todo-form" class="content-input">
+            <input type="text" placeholder="please write anything" />
+          </form>
+
+          <ul id="todo-list" class="list-box"></ul>
+        </div>
+        <div id="quote" class="quote-box">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/welcome.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+  </body>
+</html>
